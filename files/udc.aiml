@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <category>
+    <pattern>HELLO</pattern>
+    <template>
+      Hi! I am here to help you learn about different careers in computer science.<br/>
+      Lets begin.<br/><br/>
+      <button>
+        <text>START</text>
+        <postback>START</postback>
+      </button>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HI</pattern>
+    <template>
+      Hi! I am here to help you learn about different careers in computer science.<br/>
+      Lets begin.<br/><br/>
+      <button>
+        <text>START</text>
+        <postback>START</postback>
+      </button>
+    </template>
+  </category>
+
+  <category>
+    <pattern>START</pattern>
+    <template>
+     How do you prefer to work?.<br/><br/>
+      <button>
+        <text>I prefer to work independently</text>
+        <postback>INTROVERTED</postback>
+      </button>
+       <button>
+        <text>I prefer to work with people</text>
+        <postback>EXTROVERTED</postback>
+      </button>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>INTROVERTED</pattern>
+    <template>
+     How do you like to think?<br/><br/>
+      <button>
+        <text>I prefer to analyze data</text>
+        <postback>SOFTWARE ENGINEER</postback>
+      </button>
+       <button>
+        <text>I prefer to be creative</text>
+        <postback>CREATIVE INTROVERTED</postback>
+      </button>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>EXTROVERTED</pattern>
+    <template>
+     How do you like to think?<br/><br/>
+      <button>
+        <text>I prefer to analyze data and requirements</text>
+        <postback>IT PROJECT MANAGER</postback>
+      </button>
+       <button>
+        <text>I prefer to be creative / inventive </text>
+        <postback>UX DESIGNER</postback>
+      </button>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>CREATIVE INTROVERTED</pattern>
+    <template>
+      Which sounds more interesting to you?<br/><br/>
+      <button>
+        <text>Building games and virtual worlds</text>
+        <postback>GAME DEVELOPER</postback>
+      </button>
+      <button>
+        <text>Building websites and web apps</text>
+        <postback>WEB DEVELOPER</postback>
+      </button>
+    </template>
+  </category>
+  
+<category>
+  <pattern>SOFTWARE ENGINEER</pattern>
+  <template>
+    Best fit: Introverted + Analytical. <br/><br/>
+    Software engineers design and build programs and systems.
+    <button>
+    <text>Go again</text>
+    <postback>START</postback>
+  </button>
+  </template>
+</category>
+
+<category>
+  <pattern>GAME DEVELOPER</pattern>
+  <template>
+    Best fit: Introverted + Inventive. <br/><br/>
+    Game developers create interactive worlds combining code and creativity.
+    <button>
+    <text>Go again</text>
+    <postback>START</postback>
+  </button>
+  </template>
+</category>
+
+<category>
+    <pattern>WEB DEVELOPER</pattern>
+    <template>
+      Best fit: Introverted + Inventive.<br/><br/>
+      Web developers design and build websites and web applications.<br/><br/>
+      <button>
+        <text>Go again</text>
+        <postback>START</postback>
+      </button>
+    </template>
+  </category>
+  
+<category>
+  <pattern>IT PROJECT MANAGER</pattern>
+  <template>
+    Best fit: Extroverted + Analytical <br/><br/>
+    IT project managers lead teams to deliver technology projects on time.
+   <button>
+    <text>Go again</text>
+    <postback>START</postback>
+  </button>
+  </template>
+</category>
+
+<category>
+  <pattern>UX DESIGNER</pattern>
+  <template>
+    Best fit: Extroverted + Inventive <br/><br/>
+    UX designers engineer how people interact with software.
+    <button>
+    <text>Go again</text>
+    <postback>START</postback>
+  </button>
+
+  </template>
+</category>
+
+</aiml>
